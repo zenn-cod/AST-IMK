@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friend</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friends - Tomokari!</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body class="bg-gray-100 flex h-screen">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="profile">
+      <img src="profile.jpg" alt="Profile" class="avatar">
+      <h2>Amba Mornigstar</h2>
+      <p>@ambamornigstar</p>
+    </div>
+    <nav>
+      <a href="#">News feeds</a>
+      <a href="#">Messages</a>
+      <a href="#" class="active">Friends</a>
+      <a href="#">Events</a>
+      <a href="#">Setting</a>
+    </nav>
+  </aside>
+
+  <!-- Main content -->
+  <main class="main-content">
+    <!-- Online section -->
+    <section class="online">
+      <div class="header">
+        <h3>Online</h3>
+        <input type="text" placeholder="Search..." class="search">
+      </div>
+      <div class="users">
+        <div class="user">
+          <img src="rasta.jpg" class="avatar">
+          <span class="status"></span>
+          <p>Rasta</p>
+        </div>
+        <!-- Tambahkan user lain -->
+      </div>
+    </section>
+
+    <!-- List section -->
+    <section class="list">
+      <h3>List</h3>
+      <div class="card">
+        <div>
+          <p class="name">Diddy</p>
+          <p class="online">Online</p>
+        </div>
+        <button class="btn btn-primary btn-sm">Messages</button>
+      </div>
+    </section>
+
+    <!-- Recommendations section -->
+    <section class="recommendations">
+      <h3>Recommendations</h3>
+      <div class="card">
+        <p class="name">Diddy</p>
+        <button class="btn btn-success btn-sm">Follow</button>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
