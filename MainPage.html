@@ -1,11 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MainPage</title>
+    <link rel="stylesheet" href="MainPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
+
+    <div class="app-container">
+        
+        <aside class="sidebar">
+            <div class="logo">
+        <span class="sun">✺</span>
+        <h1>Tomokari!</h1>
+    </div>
+            
+            <div class="profile-card">
+                <div class="avatar-container">
+                    <img src="https://via.placeholder.com/100" alt="Amba Morningstar" class="main-avatar">
+                </div>
+                <h3>Amba Mornigstar</h3>
+                <p class="username">@ambamrngstar</p>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active"><i class="fa-solid fa-newspaper"></i> News feeds</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-envelope"></i> Messages</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-users"></i> Friends</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-calendar-days"></i> Events</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-gear"></i> Setting</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="feed-header">
+                <h2>Feeds</h2>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass" onclick="searchAction()"></i>
+                </div>
+            </div>
+
+            <div class="feed-card bg-blue">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/40" alt="Kanye East" class="user-thumb">
+                    <div class="user-info">
+                        <h4>Kanye East</h4>
+                        <span class="timestamp">posted an update a 2 days ago</span>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical menu-dots"></i>
+                </div>
+                <p class="post-text">Nge-konser yuk!</p>
+                <div class="gallery triple-grid">
+                    <div class="gallery-item"><img src="https://via.placeholder.com/300x400" alt="Concert 1"></div>
+                    <div class="gallery-item"><img src="https://via.placeholder.com/300x400" alt="Concert 2"></div>
+                    <div class="gallery-item"><img src="https://via.placeholder.com/300x400" alt="Concert 3"></div>
+                </div>
+                <div class="card-footer">
+                    <span><i class="fa-regular fa-comment"></i> Comments 15</span>
+                    <span class="like-btn" onclick="toggleLike(this, 25)"><i class="fa-regular fa-heart"></i> <span class="like-count">likes 25</span></span>
+                    <span class="views"><i class="fa-solid fa-chart-simple"></i> views 67</span>
+                </div>
+            </div>
+
+            <div class="feed-card bg-yellow">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/40" alt="Al Keren" class="user-thumb">
+                    <div class="user-info">
+                        <h4>Al Keren</h4>
+                        <span class="timestamp">posted an update a 3 days ago</span>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical menu-dots"></i>
+                </div>
+                <p class="post-text">Ngopi-ngopi, yang ga ngopi ga sukses😂</p>
+                <div class="gallery double-grid">
+                    <div class="gallery-item"><img src="https://via.placeholder.com/400x300" alt="Cafe 1"></div>
+                    <div class="gallery-item"><img src="https://via.placeholder.com/400x300" alt="Cafe 2"></div>
+                </div>
+                
+                <div class="share-box">
+                    <div class="input-row">
+                        <input type="text" id="postInput" placeholder="Share something!">
+                        <i class="fa-regular fa-face-smile smile-icon"></i>
+                    </div>
+                    <div class="action-row">
+                        <div class="tools">
+                            <span><i class="fa-regular fa-image"></i> Image</span>
+                            <span><i class="fa-solid fa-location-dot"></i> Location</span>
+                            <span class="dropdown-public"><i class="fa-solid fa-earth-americas"></i> Public <i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <button class="btn-send" onclick="sendPost()">Send</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="widgets-sidebar">
+            <div class="widget-section">
+                <h3>Events</h3>
+                <div class="event-cards-container">
+                    <div class="blank-card gray-card spec-height"></div>
+                    <div class="blank-card gray-card spec-height"></div>
+                </div>
+            </div>
+
+            <div class="widget-section">
+                <h3>Suggetions</h3>
+                <div class="suggestions-card gray-card">
+                    <div class="suggestion-item">
+                        <div class="circle-avatar maroon"></div>
+                        <span>Pigai MBG</span>
+                    </div>
+                    <div class="suggestion-item">
+                        <div class="circle-avatar maroon"></div>
+                        <span>BIGMO mpruy</span>
+                    </div>
+                    <div class="suggestion-item">
+                        <div class="circle-avatar maroon"></div>
+                        <span>Prabbbbu joka</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="widget-section">
+                <h3>Around you!</h3>
+                <div class="blank-card gray-card large-height"></div>
+            </div>
+        </aside>
+
+    </div>
+
+    <script>
+        function toggleLike(element, baseCount) {
+            const heartIcon = element.querySelector('i');
+            const label = element.querySelector('.like-count');
+            
+            if(heartIcon.classList.contains('fa-regular')) {
+                heartIcon.classList.remove('fa-regular');
+                heartIcon.classList.add('fa-solid');
+                heartIcon.style.color = '#e74c3c';
+                label.innerText = `likes ${baseCount + 1}`;
+            } else {
+                heartIcon.classList.remove('fa-solid');
+                heartIcon.classList.add('fa-regular');
+                heartIcon.style.color = 'inherit';
+                label.innerText = `likes ${baseCount}`;
+            }
+        }
+
+        function sendPost() {
+            const text = document.getElementById('postInput').value;
+            if(text.trim() === "") {
+                alert("Ketik sesuatu terlebih dahulu sebelum membagikan!");
+                return;
+            }
+            alert(`Berhasil memposting: "${text}"`);
+            document.getElementById('postInput').value = "";
+        }
+
+        function searchAction() {
+            const query = document.getElementById('searchInput').value;
+            if(query) {
+                alert(`Mencari konten untuk: "${query}"`);
+            }
+        }
+    </script>
 </body>
 </html>
