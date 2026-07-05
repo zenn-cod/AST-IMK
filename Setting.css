@@ -13,7 +13,7 @@ body {
 }
 
 /* --- LAYOUT UTAMA --- */
-.container {
+.app-container {
     display: flex;
     height: 100%;
     width: 100%;
@@ -23,6 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding-left: 20px;
 }
 
 .logo{
