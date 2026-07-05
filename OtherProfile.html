@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OtherProfile</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tomokari! - Profile</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body class="bg-gray-100 flex h-screen">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="profile">
+      <img src="profile.jpg" alt="Profile" class="avatar">
+      <h2>Amba Mornigstar</h2>
+      <p>@ambammngstar</p>
+    </div>
+    <nav>
+      <a href="#">News feeds</a>
+      <a href="#">Messages</a>
+      <a href="#">Friends</a>
+      <a href="#">Media</a>
+      <a href="#">Setting</a>
+    </nav>
+  </aside>
+
+  <!-- Main content -->
+  <main class="main-content">
+    <!-- User profile -->
+    <section class="user-profile">
+      <div class="cover"></div>
+      <div class="flex items-center gap-4 mt-[-40px]">
+        <img src="kanye.jpg" alt="Kanye East" class="avatar-large">
+        <div>
+          <h2 class="font-semibold text-lg">Kanye East</h2>
+          <p class="text-gray-500">@knyeeest</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Post -->
+    <section class="post">
+      <p class="mb-3 font-medium">Nge-konser yuk!</p>
+      <div class="grid grid-cols-3 gap-2 mb-3">
+        <img src="concert1.jpg" class="rounded-md">
+        <img src="concert2.jpg" class="rounded-md">
+        <img src="concert3.jpg" class="rounded-md">
+      </div>
+      <div class="flex gap-4 text-sm text-gray-600">
+        <span>25 Likes</span>
+        <span>0 Comments</span>
+      </div>
+    </section>
+
+    <!-- Share something -->
+    <section class="share">
+      <textarea placeholder="Share something!" class="textarea"></textarea>
+      <div class="flex justify-between items-center mt-2">
+        <div class="options">
+          <button>Image</button>
+          <button>Location</button>
+          <button>Public</button>
+        </div>
+        <button class="btn-send">Send</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Right sidebar -->
+  <aside class="event-box">
+    <h3 class="font-semibold mb-2">Upcoming Event!</h3>
+    <p class="font-medium">Konser Wave to Earth</p>
+    <p class="text-sm text-gray-600">19:00 - 22:00</p>
+    <button class="btn-join">Ask to Join</button>
+  </aside>
 </body>
 </html>
