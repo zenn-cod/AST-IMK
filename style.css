@@ -5,28 +5,37 @@
 }
 
 body{
+    background:#FBF3C8;
     height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    background:#FBF3C8;
-    font-family:'Poppins', sans-serif;
+    font-family:Poppins,sans-serif;
+}
+
+.thumbnail{
+    text-decoration:none;
 }
 
 .container{
     display:flex;
     align-items:center;
     gap:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.container:hover{
+    transform:scale(1.05);
 }
 
 .logo{
     font-size:48px;
     color:#F6A623;
-    line-height:1;
 }
 
 h1{
+    color:#000;
     font-size:64px;
     font-weight:400;
-    color:#000;
 }
