@@ -151,7 +151,7 @@ body {
 
 .profile-header-info {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     padding: 0 25px 20px 25px;
     margin-top: -45px;
     gap: 15px;
@@ -161,18 +161,20 @@ body {
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    border: 4px solid #f5f5f5;
+    border: 4px solid rgb(0, 0, 0);
     object-fit: cover;
     background-color: #fff;
+
 }
 
 .user-details {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .user-details h2 {
     font-size: 18px;
     font-weight: 700;
+    margin-top: 50px;
 }
 
 .user-details p {
@@ -211,11 +213,14 @@ body {
 .author-info h4 {
     font-size: 14px;
     font-weight: 600;
+    margin: 0; 
+    line-height: 1.0;
 }
 
 .author-info span {
     font-size: 11px;
     color: #777;
+    line-height: 1.0;
 }
 
 .post-more-btn {
