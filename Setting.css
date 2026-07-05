@@ -13,10 +13,15 @@ body {
 }
 
 /* --- LAYOUT UTAMA --- */
-.container {
-    display: flex;
-    height: 100%;
+.app-container {
+    display: grid;
+    grid-template-columns: 260px 1fr; 
     width: 100%;
+    max-width: 1300px;
+    min-height: 100vh;
+    padding: 20px;
+    gap: 30px;
+    margin: 0 auto;
 }
 
 .sidebar {
@@ -104,28 +109,23 @@ body {
     background-color: #f0f0f0;
 }
 
-/* --- KONTEN PENGATURAN (KANAN) --- */
 .content-area {
-    flex: 1;
-    background-color: #ffffff;
-    padding: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: calc(100% - 260px);
+    align-items: stretch; 
+    background-color: #ffffff;
 }
 
-/* Box utama abu-abu besar di kanan */
 .settings-box {
-    background-color: #f4f4f4; /* Background abu-abu lembut */
+    background-color: #f4f4f4; 
     width: 100%;
     max-width: 900px;
-    height: 95vh;
+    height: 100%; 
     border-radius: 20px;
     padding: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Menjaga Log Out tetap di paling bawah */
+    justify-content: space-between; 
 }
 
 .settings-list {
