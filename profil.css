@@ -264,6 +264,21 @@ body {
     margin-left: auto;
 }
 
+.card-footer {
+    display: flex;
+    gap: 25px;
+    font-size: 13px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.card-footer span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
 /* Penutup Postingan */
 .no-more-posts {
     text-align: center;
