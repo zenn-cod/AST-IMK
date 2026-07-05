@@ -1,1 +1,90 @@
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .profile {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.sidebar .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: .5rem;
+}
+.sidebar nav a {
+  display: block;
+  padding: .5rem;
+  border-radius: .25rem;
+  color: #333;
+  text-decoration: none;
+}
+.sidebar nav a:hover {
+  background: #f0f0f0;
+}
+.sidebar nav a.active {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 1.5rem;
+}
+.main-content h3 {
+  margin-bottom: .75rem;
+  font-weight: 600;
+}
+.search {
+  border: 1px solid #ccc;
+  padding: .25rem .5rem;
+  border-radius: .25rem;
+}
+.users {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.user {
+  text-align: center;
+  position: relative;
+}
+.user .avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.user .status {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 12px;
+  height: 12px;
+  background: #28a745;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.card {
+  background: #fff;
+  border-radius: .25rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  padding: .75rem;
+  margin-bottom: .5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.name {
+  font-weight: 500;
+}
+.online {
+  color: #28a745;
+  font-size: .85rem;
+}
 
