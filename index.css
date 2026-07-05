@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#FBF3C8;
+    font-family:'Poppins', sans-serif;
+}
+
+.container{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.logo{
+    font-size:48px;
+    color:#F6A623;
+    line-height:1;
+}
+
+h1{
+    font-size:64px;
+    font-weight:400;
+    color:#000;
+}
