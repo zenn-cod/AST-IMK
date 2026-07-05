@@ -1,11 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MainPage</title>
+    <title>SignUp</title>
+
+    <link rel="stylesheet" href="">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
-    
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="logo">
+
+                <span class="sun">✺</span>
+
+                <h1>Tomokari!</h1>
+
+            </div>
+
+            <p class="subtitle">
+                Please Enter your details to sign up
+            </p>
+
+            <form id="signupForm">
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Type here"
+                    required>
+
+                <div class="password-box">
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Type here"
+                        required>
+
+                    <i class="fa-regular fa-eye" id="togglePassword"></i>
+
+                </div>
+
+                <a href="#" class="check">
+                    Check Password
+                </a>
+
+                <button type="submit">
+                    Sign up
+                </button>
+
+            </form>
+
+            <div class="divider">
+
+                <span>OR</span>
+
+            </div>
+
+            <button class="google">
+
+                <img src="assets/google.png">
+
+                Continue with Google
+
+            </button>
+
+            <p class="signin">
+
+                Already have account?
+
+                <a href="#">Sign In</a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
