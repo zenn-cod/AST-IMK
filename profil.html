@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomokari! - Profile</title>
+    <!-- Menggunakan font Inter agar mirip dengan Screenshot 2026-07-05 225929.png -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="profil.css">
+</head>
+<body>
+
+ <div class="app-container">
+        
+        <aside class="sidebar">
+            <div class="logo">
+        <span class="sun">✺</span>
+        <h1>Tomokari!</h1>
+    </div>
+            
+            <div class="profile-card">
+                <div class="avatar-container">
+                    <img src="foto/dreamybull.jpg" alt="Amba Morningstar" class="main-avatar">
+                </div>
+                <h3>Amba Mornigstar</h3>
+                <p class="username">@ambamrngstar</p>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="MainPage.html" class="nav-item"><i class="fa-solid fa-newspaper"></i> News feeds</a>
+                <a href="Massages.html" class="nav-item"><i class="fa-solid fa-envelope"></i> Messages</a>
+                <a href="Friends.html" class="nav-item"><i class="fa-solid fa-users"></i> Friends</a>
+                <a href="EventMenuPage.html" class="nav-item"><i class="fa-solid fa-calendar-days"></i> Events</a>
+                <a href="Setting.html" class="nav-item"><i class="fa-solid fa-gear"></i> Setting</a>
+            </nav>
+        </aside>
+
+        <!-- ================= KOLOM 2: FEED UTAMA (TENGAH) ================= -->
+        <main class="main-content">
+            <h1 class="feed-title">Profile</h1>
+
+            <!-- Komponen Atas Profil -->
+            <div class="profile-header-box">
+                <div class="cover-photo"></div>
+                <div class="profile-header-info">
+                    <img class="avatar-large" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150" alt="Amba">
+                    <div class="user-details">
+                        <h2>Amba Mornigstar</h2>
+                        <p>@ambamrngstar</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Postingan 1 (Teks Saja) -->
+            <div class="post-card">
+                <div class="post-header">
+                    <div class="post-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150" alt="Amba">
+                        <div class="author-info">
+                            <h4>Amba Mornigstar</h4>
+                            <span>posted an update 5 hours ago</span>
+                        </div>
+                    </div>
+                    <button class="post-more-btn">• • •</button>
+                </div>
+                <div class="post-content">
+                    <p>Ikan ikan apa yang ga bisa berenang?</p>
+                    <p>Ikan goreng</p>
+                </div>
+                <div class="post-actions">
+                    <div class="action-item">💬 Comment 1</div>
+                    <div class="action-item">❤️ likes 5</div>
+                    <div class="action-item text-right">📊 views 20</div>
+                </div>
+            </div>
+
+            <!-- Postingan 2 (Ada Gambar) -->
+            <div class="post-card">
+                <div class="post-header">
+                    <div class="post-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150" alt="Amba">
+                        <div class="author-info">
+                            <h4>Amba Mornigstar</h4>
+                            <span>posted an update 3 days ago</span>
+                        </div>
+                    </div>
+                    <button class="post-more-btn">• • •</button>
+                </div>
+                <div class="post-content">
+                    <p>Gawatak gais api unggun, hiyakkkkk!</p>
+                    <img class="post-image" src="https://images.unsplash.com/photo-1533514115160-d7ea857803d5?w=600" alt="Api Unggun">
+                </div>
+                <div class="post-actions">
+                    <div class="action-item">💬 Comment</div>
+                    <div class="action-item">❤️ likes</div>
+                    <div class="action-item text-right">📊 views</div>
+                </div>
+            </div>
+
+            <!-- Bagian Teks Akhir Postingan -->
+            <div class="no-more-posts">
+                No other posts
+            </div>
+
+            <!-- Floating Input "Share something!" -->
+            <div class="share-floating-container">
+                <div class="input-box-wrapper">
+                    <input type="text" placeholder="Share something!">
+                    <button class="emoji-btn">😊</button>
+                </div>
+                <div class="share-bottom-actions">
+                    <div class="media-options">
+                        <div class="media-opt-item">🖼️ Image</div>
+                        <div class="media-opt-item">📍 Location</div>
+                        <div class="media-opt-item">🌐 Public ▾</div>
+                    </div>
+                    <button class="send-btn">Send</button>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- ================= KOLOM 3: SIDEBAR KANAN ================= -->
+        <aside class="sidebar-right">
+            <div class="event-card">
+                <h3>Upcoming Event!</h3>
+                <div class="event-banner"></div>
+                <div class="event-details">
+                    <h4>Konser Bernadya MBG</h4>
+                    <p>18.00 - 21.00 &nbsp;•&nbsp; Jl. Sini Soncon dikit keknya...</p>
+                </div>
+                <button class="invite-btn">Invite Partisipan</button>
+            </div>
+        </aside>
+
+    </div>
+
+    <script>
+        function toggleLike(element, baseCount) {
+            const heartIcon = element.querySelector('i');
+            const label = element.querySelector('.like-count');
+            
+            if(heartIcon.classList.contains('fa-regular')) {
+                heartIcon.classList.remove('fa-regular');
+                heartIcon.classList.add('fa-solid');
+                heartIcon.style.color = '#e74c3c';
+                label.innerText = `likes ${baseCount + 1}`;
+            } else {
+                heartIcon.classList.remove('fa-solid');
+                heartIcon.classList.add('fa-regular');
+                heartIcon.style.color = 'inherit';
+                label.innerText = `likes ${baseCount}`;
+            }
+        } 
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+</body>
+</html>
