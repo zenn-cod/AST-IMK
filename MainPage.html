@@ -91,7 +91,7 @@
                             <span><i class="fa-solid fa-location-dot"></i> Location</span>
                             <span class="dropdown-public"><i class="fa-solid fa-earth-americas"></i> Public <i class="fa-solid fa-chevron-down"></i></span>
                         </div>
-                        <button class="btn-send" onclick="sendPost()">Send</button>
+                        <button class="btn-send">Send</button>
                     </div>
                 </div>
             </div>
@@ -148,16 +148,6 @@
                 heartIcon.style.color = 'inherit';
                 label.innerText = `likes ${baseCount}`;
             }
-        }
-
-        function sendPost() {
-            const text = document.getElementById('postInput').value;
-            if(text.trim() === "") {
-                alert("Ketik sesuatu terlebih dahulu sebelum membagikan!");
-                return;
-            }
-            alert(`Berhasil memposting: "${text}"`);
-            document.getElementById('postInput').value = "";
         }
 
         function searchAction() {

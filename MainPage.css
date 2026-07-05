@@ -245,6 +245,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 600px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .input-row {
