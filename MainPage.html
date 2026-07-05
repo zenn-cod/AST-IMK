@@ -39,7 +39,7 @@
                 <h2>Feeds</h2>
                 <div class="search-bar">
                     <input type="text" id="searchInput" placeholder="Search">
-                    <i class="fa-solid fa-magnifying-glass" onclick="searchAction()"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
 
@@ -150,12 +150,6 @@
             }
         }
 
-        function searchAction() {
-            const query = document.getElementById('searchInput').value;
-            if(query) {
-                alert(`Mencari konten untuk: "${query}"`);
-            }
-        }
     </script>
 </body>
 </html>
