@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EventPage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tomokari! - Event Page</title>
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body class="bg-gray-100 flex h-screen">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="profile">
+      <img src="profile.jpg" alt="Profile" class="avatar">
+      <h2>Amba Mornigstar</h2>
+      <p>@ambamornigstar</p>
+    </div>
+    <nav>
+      <a href="#">News feeds</a>
+      <a href="#">Messages</a>
+      <a href="#">Friends</a>
+      <a href="#" class="active">Events</a>
+      <a href="#">Setting</a>
+    </nav>
+  </aside>
+
+  <!-- Main content -->
+  <main class="main-content">
+    <h2 class="text-2xl font-bold mb-4">Events</h2>
+    <div class="grid grid-cols-2 gap-3 mb-4">
+      <img src="event1.jpg" class="rounded-md">
+      <img src="event2.jpg" class="rounded-md">
+      <img src="event3.jpg" class="rounded-md">
+      <img src="event4.jpg" class="rounded-md">
+    </div>
+
+    <h3 class="text-xl font-semibold">Konser Bernadya MBG 2</h3>
+    <span class="badge bg-warning text-dark">Popular Event!</span>
+    <p class="text-gray-600">One of the most popular events</p>
+    <div class="flex items-center gap-2 mb-4">
+      <span class="font-medium">4.8</span>
+      <span class="text-yellow-400">★★★★★</span>
+    </div>
+
+    <ul class="list-disc pl-5 text-gray-700 mb-4">
+      <li><strong>Self check-in:</strong> You can check in yourself using a Lockbox.</li>
+      <li><strong>In-door Entertainment:</strong> Lorem ipsum bla bla bla.</li>
+      <li><strong>Free Parking:</strong> This is one of the few places in the area that offers free parking.</li>
+    </ul>
+  </main>
+
+  <!-- Right sidebar -->
+  <aside class="event-box">
+    <h3 class="font-semibold mb-2">Rp 500.000</h3>
+    <p><strong>Order in:</strong> 19/6/26</p>
+    <p><strong>Use in:</strong> 25/6/26</p>
+    <p><strong>1 Person</strong></p>
+    <button class="btn btn-primary w-100 mb-2">Order</button>
+    <button class="btn btn-warning w-100">Add Participant</button>
+  </aside>
 </body>
 </html>
