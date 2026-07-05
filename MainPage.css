@@ -13,6 +13,8 @@ body {
 }
 
 .app-container {
+    overflow-y: auto; 
+    scrollbar-width: none; 
     display: grid;
     grid-template-columns: 260px 1fr 300px;
     width: 100%;
@@ -20,6 +22,7 @@ body {
     min-height: 100vh;
     padding: 20px;
     gap: 30px;
+    
 }
 
 .sidebar {
@@ -110,6 +113,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-bottom: 150px;
 }
 
 .feed-header {
@@ -158,8 +162,11 @@ body {
     box-shadow: 0 4px 12px rgba(0,0,0,0.02);
 }
 
-.bg-blue { background-color: #cce3f6; }
-.bg-yellow { background-color: #fff9d6; }
+.bg-blue { 
+    background-color: #cce3f6; 
+    border-radius: 24px;
+}
+.bg-yellow { background-color: #fff9d6; border-radius: 24px; }
 
 .card-header {
     display: flex;
@@ -205,6 +212,7 @@ body {
     gap: 10px;
     border-radius: 16px;
     overflow: hidden;
+    
 }
 
 .triple-grid {
@@ -215,7 +223,17 @@ body {
 
 .double-grid {
     grid-template-columns: 1fr 1fr;
-    height: 220px;
+    height: 500px;
+    
+}
+
+.no-more-posts {
+    text-align: center;
+    color: #a0a0a0; /* Warna abu-abu soft */
+    font-size: 14px;
+    padding: 20px 0;
+    font-weight: 500;
+    width: 100%;
 }
 
 .gallery-item img {
