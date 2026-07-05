@@ -134,7 +134,6 @@ body {
     gap: 12px;
 }
 
-/* Baris putih menu */
 .settings-item {
     background-color: #ffffff;
     padding: 16px 20px;
@@ -152,7 +151,6 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-/* Baris putih khusus Log Out */
 .logout-item {
     background-color: #ffffff;
     padding: 16px 20px;
