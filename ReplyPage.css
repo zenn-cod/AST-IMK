@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fcfcfc;
+    color: #1a1a1a;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.app-container {
+    display: grid;
+    grid-template-columns: 260px 1fr 300px;
+    width: 100%;
+    max-width: 1300px;
+    min-height: 100vh;
+    padding: 20px;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sun {
+    color: #f8aa25;
+    font-size: 34px;
+}
+
+.logo h1 {
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.avatar-container {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 12px;
+    background-color: #ddd;
+}
+
+.main-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.username {
+    font-size: 13px;
+    color: #888;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 12px;
+    transition: background 0.2s;
+}
+
+.nav-item.active {
+    background-color: #ffebd2;
+    color: #000;
+}
+
+.nav-item:hover:not(.active) {
+    background-color: #f0f0f0;
+}
+
+.share-box {
+    background-color: #ffe6cc;
+    border-radius: 20px;
+    padding: 16px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 600px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.input-row {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-row input {
+    width: 100%;
+    padding: 12px 45px 12px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    font-size: 14px;
+}
+
+.smile-icon {
+    position: absolute;
+    right: 20px;
+    color: #666;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.action-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tools {
+    display: flex;
+    gap: 15px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.tools span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.dropdown-public {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-send {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-send:hover {
+    background-color: #222;
+}
+
+.widgets-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 150px;
+}
+
+        .main-content h2 {
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .comment-section {
+            background-color: #f4f4f4;
+            border-radius: 24px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border: 1px solid #eaeaea;
+        }
+
+        .post-card, .reply-card {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .post-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #bbb;
+        }
+        .user-meta h4 {
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .user-meta p {
+            font-size: 10px;
+            color: #888;
+        }
+        .more-options {
+            cursor: pointer;
+            color: #888;
+            font-weight: bold;
+        }
+
+        .post-body {
+            font-size: 15px;
+            padding-left: 52px;
+            line-height: 1.4;
+        }
+
+        .post-footer {
+            display: flex;
+            gap: 20px;
+            padding-left: 52px;
+            font-size: 13px;
+            color: #666;
+        }
+        .footer-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+        }
+
+        /* Divider Line */
+        .divider {
+            height: 1px;
+            background-color: #ddd;
+            margin: 10px 0;
+        }
+
+        /* Thread/Reply Layout */
+        .replies-container {
+            padding-left: 52px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+        }
+        /* Garis vertikal thread */
+        .replies-container::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 40px;
+            width: 2px;
+            background-color: #ddd;
+        }
+
+        .reply-card {
+            position: relative;
+        }
+
+        /* Input Box di bagian bawah */
+        .input-container {
+            margin-top: auto;
+            background-color: #ffeacc;
+            border-radius: 24px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .input-wrapper {
+            position: relative;
+            background: #fff;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            padding: 0 15px;
+        }
+        .input-wrapper input {
+            width: 100%;
+            border: none;
+            padding: 12px 5px;
+            outline: none;
+            font-size: 14px;
+            border-radius: 20px;
+        }
+        .emoji-icon {
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .input-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .media-options {
+            display: flex;
+            gap: 15px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .media-btn {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+        }
+        .send-btn {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 8px 24px;
+            border-radius: 20px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        /* --- SIDEBAR RIGHT --- */
+        .right-panel {
+            width: 280px;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .stories-grid {
+            display: flex;
+            gap: 10px;
+        }
+        .story-box {
+            flex: 1;
+            height: 130px;
+            background-color: #dcdcdc;
+            border-radius: 20px;
+        }
+
+        .suggestions-box {
+            background-color: #e5e5e5;
+            border-radius: 24px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .suggestion-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .sug-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: #8c2d2d;
+        }
+        .sug-name {
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .around-box {
+            height: 180px;
+            background-color: #dcdcdc;
+            border-radius: 24px;
+        }

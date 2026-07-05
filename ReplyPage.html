@@ -1,11 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ReplyPage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="ReplyPage.css">
 </head>
 <body>
-    
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="sun">✺</span>
+                <h1>Tomokari!</h1>
+            </div>
+            
+            <div class="profile-card">
+                <div class="avatar-container">
+                    <img src="foto/dreamybull.jpg" alt="Amba Morningstar" class="main-avatar">
+                </div>
+                <h3>Amba Morningstar</h3>
+                <p class="username">@ambamrngstar</p>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="MainPage.html" class="nav-item"><i class="fa-solid fa-newspaper"></i> News feeds</a>
+                <a href="Massages.html" class="nav-item"><i class="fa-solid fa-envelope"></i> Messages</a>
+                <a href="Friends.html" class="nav-item"><i class="fa-solid fa-users"></i> Friends</a>
+                <a href="EventMenuPage.html" class="nav-item"><i class="fa-solid fa-calendar-days"></i> Events</a>
+                <a href="Setting.html" class="nav-item"><i class="fa-solid fa-gear"></i> Setting</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h2>Comment</h2>
+
+            <div class="comment-section">
+                <div class="post-card">
+                    <div class="post-header">
+                        <div class="user-info">
+                            <div class="user-avatar" style="background-image: url('https://via.placeholder.com/40'); background-size: cover;"></div>
+                            <div class="user-meta">
+                                <h4>Amba Mornigstar</h4>
+                                <p>posted an update 5 hours ago</p>
+                            </div>
+                        </div>
+                        <div class="more-options">&#8942;</div>
+                    </div>
+                    <div class="post-body">
+                        Ikan ikan apa yang ga bisa berenang?<br><strong>Ikan goreng</strong>
+                    </div>
+                    <div class="post-footer">
+                        <div class="footer-item">💬 Comment 1</div>
+                        <div class="footer-item">♡ likes 5</div>
+                        <div class="footer-item">📊 views 20</div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="replies-container">
+                    <div class="reply-card">
+                        <div class="post-header">
+                            <div class="user-info">
+                                <div class="user-avatar" style="background-image: url('https://via.placeholder.com/40'); background-size: cover;"></div>
+                                <div class="user-meta">
+                                    <h4>Kanye East</h4>
+                                    <p>posted a comment 2 minutes ago</p>
+                                </div>
+                            </div>
+                            <div class="more-options">&#8942;</div>
+                        </div>
+                        <div class="post-body">
+                            Haha, iya jir 😑
+                        </div>
+                        <div class="post-footer">
+                            <div class="footer-item">💬 Comment 1</div>
+                            <div class="footer-item" style="color: #ff6b81;">❤️ likes 1</div>
+                            <div class="footer-item">📊 views 1</div>
+                        </div>
+                    </div>
+
+                    <div class="reply-card">
+                        <div class="post-header">
+                            <div class="user-info">
+                                <div class="user-avatar" style="background-image: url('https://via.placeholder.com/40'); background-size: cover;"></div>
+                                <div class="user-meta">
+                                    <h4>Amba Mornigstar</h4>
+                                    <p>posted a reply 5 second ago</p>
+                                </div>
+                            </div>
+                            <div class="more-options">&#8942;</div>
+                        </div>
+                        <div class="post-body">
+                            Kau diam 😡
+                        </div>
+                        <div class="post-footer">
+                            <div class="footer-item">💬 Comment 0</div>
+                            <div class="footer-item">♡ likes 0</div>
+                            <div class="footer-item">📊 views 1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="share-box">
+                <div class="input-row">
+                    <input type="text" id="postInput" placeholder="Share something!">
+                    <i class="fa-regular fa-face-smile smile-icon"></i>
+                </div>
+                <div class="action-row">
+                    <div class="tools">
+                        <span><i class="fa-regular fa-image"></i> Image</span>
+                        <span><i class="fa-solid fa-location-dot"></i> Location</span>
+                        <span class="dropdown-public"><i class="fa-solid fa-earth-americas"></i> Public <i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <button class="btn-send">Send</button>
+                </div>
+            </div>
+        </main>
+
+        <aside class="right-panel">
+            <div>
+                <div class="section-title">Stories</div>
+                <div class="stories-grid">
+                    <div class="story-box"></div>
+                    <div class="story-box"></div>
+                </div>
+            </div>
+
+            <div>
+                <div class="section-title">Suggetions</div>
+                <div class="suggestions-box">
+                    <div class="suggestion-item">
+                        <div class="sug-avatar"></div>
+                        <div class="sug-name">Pigai MBG</div>
+                    </div>
+                    <div class="suggestion-item">
+                        <div class="sug-avatar"></div>
+                        <div class="sug-name">BIGMO mpruy</div>
+                    </div>
+                    <div class="suggestion-item">
+                        <div class="sug-avatar"></div>
+                        <div class="sug-name">Prabbbbu joka</div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="section-title">Around you!</div>
+                <div class="around-box"></div>
+            </div>
+        </aside>
+    </div>
 </body>
 </html>

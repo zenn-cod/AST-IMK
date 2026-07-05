@@ -166,3 +166,8 @@ body {
 .logout-item:hover {
     background-color: #fff5f5;
 }
+
+.profile-link {
+    color: #000000;
+    text-decoration: none;
+}
