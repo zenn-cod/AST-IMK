@@ -1,1 +1,98 @@
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .profile {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.sidebar .avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: .5rem;
+}
+.sidebar nav a {
+  display: block;
+  padding: .5rem;
+  border-radius: .25rem;
+  color: #333;
+  text-decoration: none;
+}
+.sidebar nav a:hover {
+  background: #f0f0f0;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+.avatar-large {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.cover {
+  height: 150px;
+  background: url('cover.jpg') center/cover no-repeat;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+}
+.post {
+  background: #fff;
+  padding: 1rem;
+  border-radius: .5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin: 1rem 0;
+}
+.textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: .25rem;
+  padding: .5rem;
+}
+.options button {
+  margin-right: .5rem;
+  font-size: .85rem;
+  color: #555;
+}
+.btn-send {
+  background: #3b82f6;
+  color: #fff;
+  padding: .5rem 1rem;
+  border-radius: .25rem;
+  border: none;
+}
+.btn-send:hover {
+  background: #2563eb;
+}
+
+/* Event box */
+.event-box {
+  width: 250px;
+  background: #e0f2fe;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.btn-join {
+  background: #3b82f6;
+  color: #fff;
+  padding: .5rem;
+  border-radius: .25rem;
+  border: none;
+  margin-top: .75rem;
+}
+.btn-join:hover {
+  background: #2563eb;
+}
 
